@@ -1,5 +1,6 @@
 # Important
 praw.ini
+*.db
 # ! Some AI generated gitignore
 
 # Byte-compiled / optimized / DLL files

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Start the Flask application with Gunicorn in the background
-gunicorn -w 4 -b 0.0.0.0:5000 main:app &
+gunicorn -b 0.0.0.0:5000 main:app &
 gunicorn_pid=$!
 
 # Start the cleanup process in the background

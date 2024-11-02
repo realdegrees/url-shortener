@@ -1,0 +1,9 @@
+LICENSE
+README.md
+venv
+.github
+*.db
+__pycache__
+.env*
+.*ignore
+Dockerfile

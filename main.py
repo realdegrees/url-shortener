@@ -22,6 +22,7 @@ def shorten_url():
     if not original_url:
         return jsonify({"error": "URL is required"}), 400
     result = db.write(original_url)
+    result['host'] = request.host_url
     return jsonify(result)
 
 if __name__ == '__main__':

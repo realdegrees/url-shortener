@@ -22,7 +22,6 @@ def shorten_url():
     if not original_url:
         return jsonify({"error": "URL is required"}), 400
     result = db.write(original_url)
-    result['host'] = request.host_url # FIXME: returns a http url despite running behind a proxy using TLS
     return jsonify(result)
 
 if __name__ == '__main__':
